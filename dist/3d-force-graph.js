@@ -54094,7 +54094,7 @@ var _3dForceGraph = Kapsule({
 
         // Setup scene
         var scene = new Scene();
-        scene.background = new Color(0xffffff);
+        scene.background = new Color(0xd6d2d4);
         scene.add(state.graphScene = new Group());
 
         // Add lights
