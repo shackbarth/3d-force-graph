@@ -54229,7 +54229,7 @@ var _3dForceGraph = Kapsule({
         var layout = void 0;
         if (isD3Sim) {
             // D3-force
-            (layout = state.d3ForceLayout).stop().alpha(1) // re-heat the simulation
+            (layout = state.d3ForceLayout).stop().alpha(state.cooldownTicks <= 0 || state.cooldownTime <= 0 ? 0 : 1) // re-heat the simulation
             .numDimensions(state.numDimensions).nodes(state.graphData.nodes).force('link').id(function (d) {
                 return d[state.idField];
             }).links(state.graphData.links);
