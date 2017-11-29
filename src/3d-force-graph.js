@@ -115,7 +115,7 @@ export default Kapsule({
 
         // Setup scene
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xd6d2d4);
+        scene.background = new THREE.Color(0xb5c8d6);
         scene.add(state.graphScene = new THREE.Group());
 
         // Add lights
